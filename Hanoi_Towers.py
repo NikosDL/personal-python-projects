@@ -118,9 +118,9 @@ class Tower:
 			return False
 
 		for i in range(self.total_block_number):
-			if type(self.block_object_list[i]) == int:  #This specific patters appear multiple times
-				continue								#since the list will contain 0 (an integer)
-			else:										#if there is no block object in that position.
+			if type(self.block_object_list[i]) == int:	#This specific patters appear multiple times
+				continue				#since the list will contain 0 (an integer)
+			else:						#if there is no block object in that position.
 				block_to_return = self.block_object_list[i]
 				self.block_object_list[i] = 0
 				self.block_visual_array[i, 0] = 0
