@@ -76,7 +76,7 @@ class Tower:
 
 	def add_block(self, block):
 		"""Adds a block on the top of the stack of the tower and updates the relevant attributes 
-		and array. Checks if the move is legal. Modifies the tower and returns True if so. 
+		and array. Checks if the move is legal; modifies the tower and returns True if so. 
 		If move invalid, returns False and prints out an appropriate message."""
 
 		global move_counter
@@ -114,7 +114,8 @@ class Tower:
 					return False
 
 	def remove_block(self):
-		"""Removes the top block of the tower. Updates the relevant attribute and visual array."""
+		"""Removes and returns the top block of the tower. Updates the relevant attribute and visual array. 
+		Returns False if the tower is empty."""
 
 		if self.blocks_in_tower == 0:
 			# print("This tower is empty.")
