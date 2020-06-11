@@ -17,7 +17,10 @@ class Tower:
 	Offers methods that have to do with one specific tower."""
 
 	def __init__(self, position, total_blocks):
-
+		"""Initializes the tower instance. Takes in its position (1, 2, 3) and the total blocks that the 
+		specific instance is played with. Creates the block object list. If there is no block in a position,
+		adds 0 instead. Creates the visualization ndarray for the specific tower."""
+		
 		#Position of the tower ((left, center, right) = (1, 2, 3))
 		self.pos = position
 		self.total_block_number = total_blocks
@@ -54,7 +57,7 @@ class Tower:
 
 
 	def get_block_list(self):
-		"""Returns the visalisation array for the tower"""
+		"""Returns the visalisation array for the tower."""
 
 		return self.block_visual_array
 
